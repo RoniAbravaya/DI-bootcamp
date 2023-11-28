@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css file path here">
+    <script src="https://kit.fontawesome.com/2f1e4f3aff.js" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+  </head>
+   <!-- Bootstrap CSS -->
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Font Awesome Icons -->
+   <script src="https://kit.fontawesome.com/2f1e4f3aff.js" crossorigin="anonymous"></script>
+
+   <style>
+       body {
+           font-family: 'Arial', sans-serif;
+           background: url('https://images.pexels.com/photos/1078981/pexels-photo-1078981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+           color: black;
+           padding: 50px 20px;
+           margin: 0;
+       }
+
+       header {
+        border-radius: 10px;
+           background-color: rgba(52, 58, 64, 0.8);
+           padding: 20px;
+           text-align: center;
+           color: #fff;
+       }
+
+       nav {
+        border-radius: 10px;
+           background-color: rgba(1, 1, 1, 50%);
+           padding: 10px 20px;
+           position: fixed;
+           width: 100%;
+           height: 7%;
+           top: 0;
+           z-index: 1000;
+       }
+
+       nav a {
+           color: #fff;
+           margin-right: 20px;
+           text-decoration: none;
+           font-size: 18px;
+       }
+
+       .signup-btn {
+           margin-top: -4px;
+       }
+
+       section {
+           padding: 120px 0 50px;
+           text-align: center;
+       }
+
+       h1, h2, h3, h4, h5, h6 {
+           color: #fffafa;
+       }
+
+       p {
+           font-size: 18px;
+           color: rgb(255, 255, 255);
+       }
+
+       .icon-container {
+           font-size: 48px;
+           margin: 20px;
+           color: #007bff;
+       }
+
+       .signup-form {
+           max-width: 400px;
+           margin: 0 auto;
+           background: rgba(1, 1, 1, 50%);
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+       }
+
+       .form-group {
+           margin-bottom: 20px;
+       }
+
+       .form-group input {
+           width: 100%;
+           padding: 10px;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+       }
+
+       .form-group button {
+           width: 100%;
+           padding: 10px;
+           background-color: #007bff;
+           color: #fff;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+
+       .form-group button:hover {
+           background-color: #0056b3;
+       }
+
+       footer {
+           background-color: rgba(52, 58, 64, 0.8);
+           color: #fff;
+           text-align: center;
+           padding: 10px;
+           position: fixed;
+           width: 100%;
+           bottom: 0;
+       }
+   </style>
+</head>
+
+<body>
+
+   <nav>
+       <a href="#">Home</a>
+       <a href="#">Features</a>
+       <a href="#">Contact</a>
+       <button class="btn btn-light signup-btn">Sign Up</button>
+   </nav>
+
+   <header>
+       <h1>Welcome to My Landing Page</h1>
+   </header>
+
+   <section>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4">
+                   <div class="icon-container">
+                       <i class="fas fa-mobile-alt"></i>
+                   </div>
+                   <h3><b>Responsive Design</b></h3>
+                   <p>Our landing page is fully responsive, ensuring a great user experience on all devices.</p>
+               </div>
+               <div class="col-md-4">
+                   <div class="icon-container">
+                       <i class="fas fa-cogs"></i>
+                   </div>
+                   <h3><b>Bootstrap Framework</b></h3>
+                   <p>Built with Bootstrap, a powerful and responsive front-end framework.</p>
+               </div>
+               <div class="col-md-4">
+                   <div class="icon-container">
+                       <i class="fas fa-code"></i>
+                   </div>
+                   <h3><b>Customizable</b></h3>
+                   <p>Easily customize this landing page to fit your needs and branding.</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section>
+       <div class="container">
+           <div class="row justify-content-center">
+               <div class="col-md-6 signup-form">
+                   <h2>Sign Up for Updates</h2>
+                   <p>Stay informed about our latest news and updates.</p>
+                   <div class="form-group">
+                       <input type="email" class="form-control" placeholder="Your Email">
+                   </div>
+                   <div class="form-group">
+                       <button class="btn btn-primary">Sign Up</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <footer>
+       <p>&copy; 2023 My Landing Page. All rights reserved.</p>
+   </footer>
+
+   <!-- Bootstrap JS and Popper.js -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

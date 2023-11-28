@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning</title>
+	<style>
+		.parent {
+		  border: 2px solid #0074d9;
+		  background-color: grey;
+		  padding: 20px;
+          position: absolute;
+		}
+
+		.element {
+		  border: 2px solid #000;
+		  background-color: orange;
+          margin-left: 20px;
+          position: relative;
+		  padding: 20px;
+          position: absolute;
+		}
+        .dbox {
+		  border: 2px solid #000;
+		  background-color:blue;
+		  padding: 20px;
+          margin-right: 50px;
+          
+
+        }   
+		body {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  height: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">element 1</div>
+</body>
+
+<body>
+    <div class="element">element 2</div>
+</body>
+
+<body>
+    <div class="dbox">element 3</div>
+</body>
+</html>
