@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .footer {
+    top: 90%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .product {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .product {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .product {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .product {
+      width: 25%;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .product {
+      width: 16.6667%;
+    }
+  }
+
+  section {
+    text-align: center;
+  }
+
+  table {
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 90%;
+    margin-top: 5%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-bottom: 10%;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .buy-btn {
+    display: block;
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .price {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  body {
+    background-image: url('shopping-background-vector-1910056.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
