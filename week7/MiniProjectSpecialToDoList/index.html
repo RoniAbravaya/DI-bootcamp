@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+    
+        <ul id="tasks-list"></ul>
+    
+        <form id="add-task-form">
+            <label for="task-name">Name:</label>
+            <input type="text" id="task-name" required>
+          
+            <label for="task-description">Description:</label>
+            <textarea id="task-description" required></textarea>
+          
+            <label for="task-start-date">Start Date:</label>
+            <input type="datetime-local" id="task-start-date" required>
+          
+            <label for="task-end-date">End Date:</label>
+            <input type="datetime-local" id="task-end-date" required>
+          
+            <button type="submit">Add Task</button>
+          </form>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
