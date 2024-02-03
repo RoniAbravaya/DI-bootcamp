@@ -1,0 +1,92 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+div {
+  color: yellow;
+}
+
+.loading {
+  display: none;
+}
+
+.character-info {
+  display: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.fa-spinner {
+  color: #007BFF;
+}
+
+.background-image {
+  background-image: url('https://as1.ftcdn.net/v2/jpg/01/02/88/40/1000_F_102884000_9nDhPvgQwwaNgDWbAwUJVR0puNDOMYhL.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.character-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  width: 60%;
+  border: none;
+}
+
+#search-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.loading {
+  display: none;
+}
+
+.character-info {
+  border: 2px yellow;
+
+  display: none;
+  margin-top: 20px;
+}
+
+.fa-spinner {
+  color: #007BFF;
+}
+
+
+/* Your existing CSS remains the same */
+
+.character-details {
+  border: 2px yellow;
+  color: yellow;
+  display: none;
+  margin-top: 20px;
+}
