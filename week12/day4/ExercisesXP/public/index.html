@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog API</title>
+</head>
+
+<body>
+  <h1>Create New Book</h1>
+  <form id="createBookForm">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br>
+    <label for="author">Author:</label><br>
+    <input type="text" id="author" name="author"><br>
+    <label for="publishedYear">Published Year:</label><br>
+    <input type="number" id="publishedYear" name="publishedYear"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <hr>
+  <h1>All Books</h1>
+  <div id="books"></div>
+<body>
+  <h1>Create New Post</h1>
+  <form id="createPostForm">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br>
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content"></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <hr>
+  <h1>All Posts</h1>
+  <div id="posts"></div>
+
+  <script>
+    async function fetchPosts() {
+      const response = await fetch('/api/posts');
+      const posts = await response.json();
+      const postsContainer = document.getElementById('posts');
+      postsContainer.innerHTML = '';
+      posts.forEach(post => {
+        const postElement = document.createElement('div');
+        postElement.innerHTML = `
+          <h2>${post.title}</h2>
+          <p>${post.content}</p>
+          <hr>
+        `;
+        postsContainer.appendChild(postElement);
+      });
+    }
+
+    document.getElementById('createPostForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const title = document.getElementById('title').value;
+      const content = document.getElementById('content').value;
+      const response = await fetch('/api/posts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ title, content })
+      });
+      if (response.ok) {
+        document.getElementById('title').value = '';
+        document.getElementById('content').value = '';
+        fetchPosts();
+      }
+    });
+
+    fetchPosts();
+
+    async function fetchBooks() {
+      const response = await fetch('/api/books');
+      const books = await response.json();
+      const booksContainer = document.getElementById('books');
+      booksContainer.innerHTML = '';
+      books.forEach(book => {
+        const bookElement = document.createElement('div');
+        bookElement.innerHTML = `
+          <h2>${book.title}</h2>
+          <p>Author: ${book.author}</p>
+          <p>Published Year: ${book.publishedYear}</p>
+          <hr>
+        `;
+        booksContainer.appendChild(bookElement);
+      });
+    }
+
+    document.getElementById('createBookForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const title = document.getElementById('title').value;
+      const author = document.getElementById('author').value;
+      const publishedYear = document.getElementById('publishedYear').value;
+      const response = await fetch('/api/books', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ title, author, publishedYear })
+      });
+      if (response.ok) {
+        document.getElementById('title').value = '';
+        document.getElementById('author').value = '';
+        document.getElementById('publishedYear').value = '';
+        fetchBooks();
+      }
+    });
+
+    fetchBooks();
+
+  </script>
+</body>
+</html>
