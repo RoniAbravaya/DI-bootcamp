@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </nav>
+        </header>
+        <Div class="entrance">
+            <p>Welcome to our volunteer program!</p>
+            <h3>
+            Are you passionate about lending a helping hand to those in need in Israel? Whether it's preparing meals for the less fortunate, providing aid to injured soldiers, or organizing donated items for distribution, your assistance can make a significant difference in the lives of many.
+
+            By filling out the form below, you're taking the first step towards making a positive impact in your community. Whether you're skilled in cooking, have a compassionate heart for those in need, or simply want to contribute to a worthy cause, your willingness to help is invaluable.
+            
+            Together, we can create a brighter future for those facing hardships. Let's come together and make a difference, one act of kindness at a time. Fill out the form below and join us in making a meaningful difference in the lives of others. Your support is greatly appreciated!
+        </h3>
+        </Div>
+  <div class="container">
+    <h1>Forms</h1>
+    <div class="forms-wrapper">
+      <!-- Packing Form -->
+      <form id="packingForm" action="/api/packing" method="POST">
+        <h2>Organizing donated items for distribution</h2>
+        <label for="packing_name">Name:</label>
+        <input type="text" id="packing_name" name="name" required><br><br>
+        <label for="packing_last_name">Last Name:</label>
+        <input type="text" id="packing_last_name" name="last_name" required><br><br>
+        <label for="packing_phone_number">Phone Number:</label>
+        <input type="tel" id="packing_phone_number" name="phone_number" required><br><br>
+        <label for="packing_location">Location:</label>
+        <select id="packing_location" name="location">
+          <option value="Tel Aviv">Tel Aviv</option>
+          <option value="Jerusalem">Jerusalem</option>
+          <option value="Haifa">Haifa</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Helping Form -->
+      <form id="helpingForm" action="/api/helping" method="POST">
+        <h2>Providing aid to injured soldiers</h2>
+        <label for="helping_name">Name:</label>
+        <input type="text" id="helping_name" name="name" required><br><br>
+        <label for="helping_last_name">Last Name:</label>
+        <input type="text" id="helping_last_name" name="last_name" required><br><br>
+        <label for="helping_phone_number">Phone Number:</label>
+        <input type="tel" id="helping_phone_number" name="phone_number" required><br><br>
+        <label for="helping_location">Location:</label>
+        <select id="helping_location" name="location">
+          <option value="Tel Aviv">Tel Aviv</option>
+          <option value="Jerusalem">Jerusalem</option>
+          <option value="Haifa">Haifa</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Cooking Form -->
+      <form id="cookingForm" action="/api/cooking" method="POST">
+        <h2>Preparing meals for soldiers</h2>
+        <label for="cooking_name">Name:</label>
+        <input type="text" id="cooking_name" name="name" required><br><br>
+        <label for="cooking_last_name">Last Name:</label>
+        <input type="text" id="cooking_last_name" name="last_name" required><br><br>
+        <label for="cooking_phone_number">Phone Number:</label>
+        <input type="tel" id="cooking_phone_number" name="phone_number" required><br><br>
+        <label for="cooking_location">Location:</label>
+        <select id="cooking_location" name="location">
+          <option value="Tel Aviv">Tel Aviv</option>
+          <option value="Jerusalem">Jerusalem</option>
+          <option value="Haifa">Haifa</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <a href="/data.html" class="go-to-data">Go to Data</a>
+
+<script src="script.js"></script>
+</body>
+</html>
