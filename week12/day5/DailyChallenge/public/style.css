@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://plus.unsplash.com/premium_photo-1670855108650-888ae6cba5d1?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace 'israel-flag-background.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the content horizontally */
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .forms-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  form {
+    width: 30%;
+  }
+  
+  form h2 {
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .go-to-data {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    color: #007bff;
+    text-decoration: none;
+    border: solid 2px rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .go-to-data:hover {
+    text-decoration: underline;
+  }
+
+
+  .entrance {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.entrance p {
+    font-size: 14px;
+    color: #666;
+}
