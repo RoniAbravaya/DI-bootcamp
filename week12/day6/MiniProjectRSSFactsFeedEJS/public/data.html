@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleData.css">
+  <title>Data</title>
+  
+</head>
+<body class="container">
+
+  <h1>Data</h1>
+  <form id="dataForm" method="GET">
+    <label for="category">Category:</label>
+    <select id="category" name="category">
+      <option value="packing">Packing</option>
+      <option value="helping">Helping</option>
+      <option value="cooking">Cooking</option>
+    </select><br><br>
+    <label for="location">Location:</label>
+    <select id="location" name="location">
+      <option value="Tel Aviv">Tel Aviv</option>
+      <option value="Jerusalem">Jerusalem</option>
+      <option value="Haifa">Haifa</option>
+    </select><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="data"></div>
+
+  <script>
+    document.getElementById('dataForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const category = document.getElementById('category').value;
+      const location = document.getElementById('location').value;
+      const response = await fetch(`/api/${category}?location=${location}`);
+      const data = await response.json();
+      const dataContainer = document.getElementById('data');
+      dataContainer.innerHTML = '';
+      data.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.innerHTML = `
+          <h2>${item.name}</h2>
+          <p>Last Name: ${item.last_name}</p>
+          <p>Phone Number: ${item.phone_number}</p>
+          <p>Location: ${item.location}</p>
+          <hr>
+        `;
+        dataContainer.appendChild(itemElement);
+      });
+    });
+  </script>
+  
+
+  <a class="go-to-data" href="/index.html">Back to Forms</a>
+</body>
+</html>
