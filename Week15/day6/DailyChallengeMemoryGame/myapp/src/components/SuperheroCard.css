@@ -1,0 +1,26 @@
+.superhero-card {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #9306f1;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .superhero-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .superhero-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .superhero-card h3 {
+    margin: 10px 0;
+  }
+  
+  .superhero-card p {
+    font-style: italic;
+  }
+  
